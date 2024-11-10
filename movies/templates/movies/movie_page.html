@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block title%}
+    {{ movies.title }}
+{% endblock %}
+
+{% block content %}
+    <section>
+        <img 
+            class="banner"
+            src="{{ movies.banner.url }}"
+            alt="{{ movies.title }}"
+        />
+        <h1>{{ movies.title }}</h1>
+        <h3> <u>Release Year</u> </h3>
+        <h4> {{ movies.date}} </h4>
+        <h3> <u>Genres</u> </h3>
+        <h4> 
+            -{{ movies.genreOne }} <br> <br>
+            -{{ movies.genreTwo }} <br> <br>
+            -{{ movies.genreThree }}
+        </h4>
+        <h3> <u> Movie Summary </u></h3>
+        <h4> {{ movies.body }} </h4>
+    </section>
+    <br>
+    <h3> <u> Rating </u></h3>
+    <h4> {{ movies.rating }} Stars</h4>
+{% endblock %}

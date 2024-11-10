@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #000080;
+    color: #A1662F;
+    font-size: 3rem;
+}
+
+nav {
+    padding: 1rem;
+    background-color: #002366;
+    color: white;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: yellow;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #81dbb8;
+}
+
+a:hover {
+    opacity: .85;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Movie info page sub-headers */
+h3 {
+    color: white;
+    font-size: 2rem
+}
+
+/* Movie info page info under sub-headers */
+
+h4 {
+    color: white;
+    font-size: 1rem
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    min-width: 100px;
+}
+
+.search-icon {
+    position: absolute;
+    top: -27px;
+    left: 808px;
+    width: 14px;
+    visibility: visible;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.clear-icon {
+    position: absolute;
+    top: -26px;
+    left: 1004px;
+    width: 12px;
+    cursor: pointer;
+    visibility: visible;
+}
+
+.search {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
+
+    position: relative;
+    top: -30px; left: 800px;
+}
+
+.search:hover, .search:focus {
+    border: 1.5px solid #009688;
+    background-color: white;
+}
+
+.form-with-validation {
+    max-width: 600px;
+    font-size: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+.form-with-validation div {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+}
+
+.form-with-validation input {
+    padding: 0.25rem;
+    max-width: 300px;
+}
+
+.form-submit {
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 125px;
+}
